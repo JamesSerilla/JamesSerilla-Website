@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>James Personal Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://kit.fontawesome.com/c39be10d42.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+<div id ="header">
+	<div class="container">
+		<nav>
+			<img src="images/Jameslogo.png" class="logo">
+			<ul id="sidemenu">
+				<li><a href="#header"> Home</a></li>
+				<li><a href="#about"> About</a></li>
+				<li><a href="#services"> Services</a></li>
+				<li><a href="#portfolio"> Portfolio</a></li>
+				<li><a href="#Contact"> Contact</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class="header-text">
+			<p>Systems Analyst</p>
+			<h1>Hi, I'm <span>James Serilla</span></h1>
+		</div>
+	</div>
+</div>
+<!-----------------About---------------->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="images/Aboutpic.jpeg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">About Me</h1>
+				<p>James Anthony Serilla is an experienced IT Systems Analyst with a background in the Australian Financial Planning industry and Telecom industry. He is proficient in tools like Xplan, Power BI, Excel, Power Automate, SharePoint, MS Visio, and Dynamics 365 CRM to optimize business processes. With expertise in project management, data analysis, and stakeholder collaboration, James excels in both Agile and Waterfall methodologies. Additionally, he specializes in ERP Support, offering user assistance, generating reports, creating documentation, and troubleshooting ERP-related issues to maintain system efficiency.</p>
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links"onclick="opentab('experience')">Experience</p>
+					<p class="tab-links"onclick="opentab('education')">Education</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+					  <li><span><strong>IT Systems Analyst</strong>
+					  </span><br>* System Analysis & Administration<br>* Data Analysis & Reporting<br>* Xplan</li>
+					  <li><span><strong>Systems Analyst</strong>
+					  </span><br>* Data Gathering<br>* Project Management Support<br>* MySQL data analysis</li>
+					  <li><span><strong>ERP Support</strong>
+					  </span><br>* ERP System Administration<br>* End User Support<br>* Collaboration & Implementation</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experience">
+					<ul>
+						<li><span><strong>IT Systems Analyst</strong></span><br> Emapta Global<br>Aug 2022 - Present</li>
+						<li><span><strong>Systems Analyst</strong></span><br>Seven Seven Global Services Inc<br>May 2021 - Jul 2022</li>
+						<li><span><Strong>ERP Support</Strong></span><br>Faxcable Inc<br>Oct 2018 - April 2021</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span><strong>Bachelor of Science in Information Technology</strong>
+						</span><br>Iloilo Science And Technology University Miagao Campus<br>2014 - 2018</li>
+						<li><span><strong>High School</strong>
+						</span><br>Lawigan National High School<br>2010 - 2014</li>
+						<li><span><strong>Grade School</strong>
+						</span><br>Marulas Central School<br>2004 - 2010</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---------------Services--------------->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-magnifying-glass-chart"></i>
+				<h2>Systems Development and Reporting</h2>
+				<p>Creating and implementing information systems, alongside the function of generating reports based on the data collected within the systems</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-database"></i>
+				<h2>Project & Data Management</h2>
+				<p>Managing a project while simultaneously organizing, storing, and utilizing the data generated throughout its lifecycle, ensuring accurate information is readily available for informed decision-making and successful project completion.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-brands fa-app-store"></i>
+				<h2>ERP System Support & Maintenance</h2>
+				<p>Managing and updating an Enterprise Resource Planning (ERP) system to ensure its smooth operation, security, and functionality by addressing issues, applying updates, performing regular checks, and adapting to changing business needs, including bug fixes, performance optimization, data backups, and addressing user queries.</p>
+				<a href="#">Learn more</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---------------Portfolio--------------->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/SA 1.jpeg">
+				<div class="layer">
+					<h3>Systems Analysis</h3>
+					<p>Manage and improve an organization's systems.</p>
+					<a href="#"><i class="fa-solid fa-link"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="images/SA 2.jpeg">
+				<div class="layer">
+					<h3>Systems Design</h3>
+					<p>Analyzing user needs, designing and architecting complex information systems by defining system requirements</p>
+					<a href="#"><i class="fa-solid fa-link"></i></a>
+				</div>
+				</div>
+			<div class="work">
+				<img src="images/SA 3.jpeg">
+				<div class="layer">
+					<h3>Analytics and Reporting</h3>
+					<p>Collecting, analyzing, and presenting data to help businesses make decisions.</p>
+					<a href="#"><i class="fa-solid fa-link"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn">See more</a>
+	</div>
+</div>
+
+<!----------Contact---------------->
+<div id="Contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane"></i>anthonyserilla@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i>09509001775</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+					<a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+					<a href="https://mail.google.com" class="fa fa-google"></a>
+				</div>
+				<a href="images/James Anthony Serilla CV.pdf" download class="btn DownloadCVBtn">Download CV</a>
+			</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btnSubmit">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p> Copyright © <span id="date">1/1/2025</span>. James Anthony Serilla. All rights reserved.</p>
+
+	</div>
+</div>
+
+
+<script type="text/javascript" src="index.js"></script>
+
+<!---<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	function opentab(tabname){
+		for (tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for (tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+	
+
+</script>}-->
+	
+</body>
+</html>
