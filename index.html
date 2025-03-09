@@ -15,7 +15,7 @@
 <div id ="header">
 	<div class="container">
 		<nav>
-			<img src="images/Jameslogo.png" class="logo">
+			<img src="images/JamesL.png" class="logo">
 			<ul id="sidemenu">
 				<li><a href="#header"> Home</a></li>
 				<li><a href="#about"> About</a></li>
@@ -27,8 +27,9 @@
 			<i class="fas fa-bars" onclick="openmenu()"></i>
 		</nav>
 		<div class="header-text">
-			<p>Systems Analyst</p>
-			<h1>Hi, I'm <span>James Serilla</span></h1>
+			
+			<h1>Hi, my name is</h1>
+  			<h1>James.</h1>
 		</div>
 	</div>
 </div>
@@ -43,10 +44,11 @@
 				<h1 class="sub-title">About Me</h1>
 				<p>James Anthony Serilla is an experienced IT Systems Analyst with a background in the Australian Financial Planning industry and Telecom industry. He is proficient in tools like Xplan, Power BI, Excel, Power Automate, SharePoint, MS Visio, and Dynamics 365 CRM to optimize business processes. With expertise in project management, data analysis, and stakeholder collaboration, James excels in both Agile and Waterfall methodologies. Additionally, he specializes in ERP Support, offering user assistance, generating reports, creating documentation, and troubleshooting ERP-related issues to maintain system efficiency.</p>
 				<div class="tab-titles">
-					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<!--<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>-->
 					<p class="tab-links"onclick="opentab('experience')">Experience</p>
 					<p class="tab-links"onclick="opentab('education')">Education</p>
 				</div>
+				<!--
 				<div class="tab-contents active-tab" id="skills">
 					<ul>
 					  <li><span><strong>IT Systems Analyst</strong>
@@ -56,24 +58,114 @@
 					  <li><span><strong>ERP Support</strong>
 					  </span><br>* ERP System Administration<br>* End User Support<br>* Collaboration & Implementation</li>
 					</ul>
-				</div>
+				</div>-->
+			<div class="tab-contents active-tab" id="experience">
+						<div class="experience">
+					        <div class="job">
+					            <div class="title">IT Systems Analyst</div>
+					            <div class="company">Emapta Philippines Inc &middot; Full-time</div>
+					            <div class="duration">Aug 2022 - Present &middot; 2 yrs 8 mos</div>
+					            <div class="location">Philippines &middot; On-site</div>
+					            <div class="skills">
+					                &#x1F4BC; <a href="#" class="skillsLink" data-modal="empataSkills">Xplan, Agile Environment and + More skills</a>
+					            </div>
+					        </div>
+					        <div class="job">
+					            <div class="title">Systems Analyst</div>
+					            <div class="company">Seven Seven Global Inc</div>
+					            <div class="duration">May 2021 - Jul 2022 &middot; 1 yr 3 mos</div>
+					            <div class="location">Taguig, National Capital Region, Philippines &middot; Remote</div>
+					            <div class="details">Client: Globe Telecom</div>
+					            <div class="skills">
+					                &#x1F4BC; <a href="#" class="skillsLink" data-modal="sevenSkills">Service-Level Agreements (SLA), Project Management and More skills</a>
+					            </div>
+					        </div>
+					        <div class="job">
+					            <div class="title">ERP Support</div>
+					            <div class="company">Faxcable Inc &middot; Full-time</div>
+					            <div class="duration">Oct 2018 - Apr 2021 &middot; 2 yrs 7 mos</div>
+					            <div class="location">Mandaluyong, National Capital Region, Philippines &middot; On-site</div>
+					            <div class="skills">
+					                &#x1F4BC; <a href="#" class="skillsLink" data-modal="erpSkills">SAP ERP, Microsoft Office and More skills</a>
+					            </div>
+					        </div>
+					    </div>
+
+					    <div id="empataSkills" class="modal">
+					        <div class="modal-content">
+					            <span class="close">&times;</span>
+					            <h3>Skills for IT Systems Analyst at Emapta Philippines Inc</h3>
+					            <div class="skill">Agile Environment</div>
+					            <div class="skill">Financial Reporting</div>
+					            <div class="skill">Data Analysis</div>
+					            <div class="skill">Manual Testing</div>
+					            <div class="skill">Pivot Tables</div>
+					            <div class="skill">IT Systems Development</div>
+					            <div class="skill">Python</div>
+					            <div class="skill">Data Visualization</div>
+					            <div class="skill">Project Management</div>
+					            <div class="skill">CSS</div>
+					            <div class="skill">HTML</div>
+					            <div class="skill">Power Automate</div>
+					            <div class="skill">Dynamics 365</div>
+					        </div>
+					    </div>
+
+					    <div id="sevenSkills" class="modal">
+					        <div class="modal-content">
+					            <span class="close">&times;</span>
+					            <h3>Skills for Systems Analyst at Seven Seven Global Inc</h3>
+					            <div class="skill">Service-Level Agreements (SLA)</div>
+					            <div class="skill">Project Management</div>
+					            <div class="skill">Agile Environment</div>
+					            <div class="skill">Microsoft Office</div>
+					            <div class="skill">Software Development Life Cycle (SDLC)</div>
+					            <div class="skill">Requirements Analysis</div>
+					        </div>
+					    </div>
+
+					    <div id="erpSkills" class="modal">
+					        <div class="modal-content">
+					            <span class="close">&times;</span>
+					            <h3>Skills for ERP Support at Faxcable Inc</h3>
+					            <div class="skill">SAP ERP</div>
+					            <div class="skill">Microsoft Office</div>
+					            <div class="skill">ERP Specialist</div>
+					            <div class="skill">Employee Training</div>
+					            <div class="skill">Consulting</div>
+					            <div class="skill">Data Collection</div>
+					        </div>
+					    </div>
+			 
+			</div>
+    	<!---
 				<div class="tab-contents" id="experience">
 					<ul>
 						<li><span><strong>IT Systems Analyst</strong></span><br> Emapta Global<br>Aug 2022 - Present</li>
 						<li><span><strong>Systems Analyst</strong></span><br>Seven Seven Global Services Inc<br>May 2021 - Jul 2022</li>
 						<li><span><Strong>ERP Support</Strong></span><br>Faxcable Inc<br>Oct 2018 - April 2021</li>
 					</ul>
+					--->
+									<div class="tab-contents" id="education">
+				<div class="education">
+				        <div class="school">
+				            <div class="school-name">Iloilo Science and Technology University Miagao Campus</div>
+				            <div class="degree">Bachelor's degree, Information Technology</div>
+				            <div class="duration">Jun 2014 - Apr 2018</div>
+				        </div>
+				        <div class="school">
+				            <div class="school-name">Lawigan National High School</div>
+				            <div class="duration">Jun 2010 - Apr 2018</div>
+				        </div>
+				        <div class="school">
+				            <div class="school-name">Marulas Central School</div>
+				            <div class="duration">Jun 2004 - Apr 2010</div>
+				        </div>
+    			</div>
 				</div>
-				<div class="tab-contents" id="education">
-					<ul>
-						<li><span><strong>Bachelor of Science in Information Technology</strong>
-						</span><br>Iloilo Science And Technology University Miagao Campus<br>2014 - 2018</li>
-						<li><span><strong>High School</strong>
-						</span><br>Lawigan National High School<br>2010 - 2014</li>
-						<li><span><strong>Grade School</strong>
-						</span><br>Marulas Central School<br>2004 - 2010</li>
-					</ul>
+
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -147,7 +239,7 @@
 			<div class="contact-left">
 				<h1 class="sub-title">Contact Me</h1>
 				<p><i class="fa-solid fa-paper-plane"></i>anthonyserilla@gmail.com</p>
-				<p><i class="fas fa-phone-square-alt"></i>09509001775</p>
+				<p><i class="fas fa-phone-square-alt"></i>+639509001775</p>
 				<div class="social-icons">
 					<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
 					<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
