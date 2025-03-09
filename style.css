@@ -37,7 +37,7 @@ nav{
 	color: #fff;
 }
 .logo{
-	width: 140px;
+	width: 110px;
 }
 
 nav ul li{
@@ -82,7 +82,7 @@ nav ul li a.active {
 }
 
 .header-text{
-	margin-top: 20%;
+	margin-top: 30%;
 	font-size: 30px;
 }
 .header-text h1{
@@ -90,9 +90,73 @@ nav ul li a.active {
 	margin-top: 20px;
 }
 
-.header-text h1 span{
-	color: 	#0238ea;
+.header-text h1:nth-child(1) {
+  color: linear-gradient(to left, #0000FF, #000080);
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 2s steps(40,end) forwards;
 }
+
+.header-text h1:nth-child(2) {
+  opacity: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to left, #0000FF, #000080);
+  font-weight: 800;
+  font-size: 100px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid blue;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid blue;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid blue;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid blue;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 
 /*----------About---------->*/
 #about{
@@ -117,7 +181,7 @@ nav ul li a.active {
 }
 .about-col-2 p{
 	text-align: justify;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 .sub-title{
 	font-size: 60px;
@@ -411,14 +475,15 @@ nav .fas{
 	#header{
 		background-image: url(images/JamesBG.png);
 	}
-	.header-text{
-		padding-top: 20px;
-		margin-top:100%;
-		font-size: 16px;
-	}
-	.header-text h1{
-		font-size: 25px;
-	}
+	
+.header-text{
+	margin-top: 90%;
+	font-size: 30px;
+}
+.header-text h1{
+	font-size: 60px;
+	margin-top: 20px;
+}
 	nav .fas{
 	display: block;
 	font-size: 25px;
@@ -486,3 +551,109 @@ nav .fas{
 	margin-top: -50px;
 	display: block;
 }
+
+/*--------Experience popup form--------*/
+
+ .experience {
+            max-width: 600px;
+        }
+        .job {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+        .job:last-child {
+            border-bottom: none;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .company {
+            font-size: 16px;
+            color: #555;
+        }
+        .duration, .location {
+            font-size: 14px;
+            color: #777;
+        }
+        .skills {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .skills a {
+            color: blue;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .skills a:hover {
+            text-decoration: underline;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+            max-width: 400px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .close {
+            cursor: pointer;
+            color: black;
+            font-size: 24px;
+            float: right;
+        }
+        .close:hover {
+            color: red;
+        }
+        .modal-content h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .skill {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .skill:last-child {
+            border-bottom: none;
+        }
+
+
+/*--------Education popup form--------*/
+
+.education {
+            max-width: 600px;
+        }
+        .school {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+        .school:last-child {
+            border-bottom: none;
+        }
+        .school-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .degree {
+            font-size: 16px;
+            color: #555;
+        }
+        .duration {
+            font-size: 14px;
+            color: #777;
+        }

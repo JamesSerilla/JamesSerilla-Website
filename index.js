@@ -1,25 +1,25 @@
 /*---------tablinks open tab-------*/
 var tablinks = document.getElementsByClassName("tab-links");
-	var tabcontents = document.getElementsByClassName("tab-contents");
-	function opentab(tabname){
-		for (tablink of tablinks){
-			tablink.classList.remove("active-link");
-		}
-		for (tabcontent of tabcontents){
-			tabcontent.classList.remove("active-tab");
-		}
-		event.currentTarget.classList.add("active-link");
-		document.getElementById(tabname).classList.add("active-tab");
-	}
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for (tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
 /*---------Side Menu-------*/
-	var sidemenu = document.getElementById("sidemenu");
+  var sidemenu = document.getElementById("sidemenu");
 
-	function openmenu(){
-		sidemenu.style.right = "0";
-	}
-		function closemenu(){
-		sidemenu.style.right = "-200px";
-	}
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
 
 /*---------Contact form google app script-------*/
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyNttOaKMtmnnTWQvFI0r1OYxSD4mv1cwW3QDil9cgRLOoRDxAB5wAuiN3-3YAYVIE73A/exec'
@@ -63,6 +63,29 @@ form.addEventListener('submit', e => {
       alert("Apologies, but your entry has already been submitted.");
     });
 });
+
+
+
+  // Experience and Education function
+        document.querySelectorAll(".skillsLink").forEach(link => {
+            link.onclick = function(event) {
+                event.preventDefault();
+                const modal = document.getElementById(this.dataset.modal);
+                modal.style.display = "flex";
+            };
+        });
+
+        document.querySelectorAll(".close").forEach(closeBtn => {
+            closeBtn.onclick = function() {
+                this.closest(".modal").style.display = "none";
+            };
+        });
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+            }
+        };
 
 
 
